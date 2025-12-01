@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: black;
+}
+
+/* Navigation bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 20px 20px;
+}
+
+.navbar h1 {
+    color: white;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    list-style: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    background-color: rgb(27, 27, 27);
+    padding: 15px;
+    border-radius: 18px;
+    border: 1px solid rgb(53, 53, 53);
+}
+
+.navbar a:hover {
+    background-color: orange;
+}
+
+/* Hero section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 20px 150px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.left {
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.left h6 {
+    color: rgb(189, 189, 189);
+    font-size: 1.5em;
+}
+
+.left h1 {
+    color: white;
+    font-size: 4em;
+}
+
+.left h2 {
+    color: orange;
+    font-size: 2em;
+}
+
+.introductionText {
+    font-size: 1em;
+    color: rgb(214, 214, 214);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 25px 0;
+}
+
+.viewProj {
+    background-color: orange;
+    width: 180px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.viewProj:hover {
+    transform: scale(1.08);
+    /* macht den Button größer */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    /* optional für Effekt */
+    cursor: pointer;
+}
+
+.left a {
+    font-size: 1.4em;
+    text-decoration: none;
+    color: black;
+}
+
+.portrait img {
+    width: 250px;
+    height: 250px;
+    border-radius: 30px;
+    box-shadow: 0 0 20px rgba(255, 165, 0, 0.8);
+}
+
+/* About Me Section */
+.aboutMe {
+    padding: 20px 150px;
+    background-color: rgb(31, 31, 31);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h1 {
+    color: orange;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 15px;
+    ;
+}
+
+.title p {
+    color: rgb(181, 181, 181);
+    padding-bottom: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.aboutMeLeft img {
+    width: 400px;
+    height: 400px;
+}
+
+.aboutMeContent {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+.aboutMeContent p {
+    color: rgb(181, 181, 181);
+}
+
+/* projects section */
+.projects {
+    padding: 20px 150px;
+    display: flex;
+    gap: 15px;
+}
+
+.box1 {
+    background-color: rgb(47, 47, 47);
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    padding-bottom: 10px;
+    border-radius: 12px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.box1:hover {
+    transform: scale(1.08);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.box1 img {
+    width: 350px;
+    height: 250px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.box1 h3 {
+    color: white;
+    text-align: center;
+}
+
+.box1 p {
+    padding: 0 15px 20px 15px;
+    color: rgb(181, 181, 181)
+}
+
+.buttons {
+    padding: 0 0 10px 0;
+    display: flex;
+    gap: 5px;
+}
+
+.buttons button {
+    border-radius: 8px;
+    font-size: 1em;
+    background-color: rgb(47, 47, 47);
+    border: solid 1px rgb(101, 101, 101);
+    color: white;
+    padding: 5px 15px;
+}
+
+.viewButton {
+    padding: 0 0 10px 0;
+    display: flex;
+    gap: 5px;
+    border-radius: 8px;
+    font-size: 1em;
+    background-color: rgb(47, 47, 47);
+    border: solid 1px rgb(101, 101, 101);
+    color: white;
+    padding: 5px 15px;
+}
+
+.viewButton a {
+    color: white;
+    text-decoration: none;
+}
+
+.viewButton:hover {
+    background-color: orange;
+    color: black;
+}
+
+/* footer */
+footer {
+    background-color: white;
+    text-align: center;
+    padding: 5px 0;
+}
